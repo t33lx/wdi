@@ -10,7 +10,7 @@ from random import randrange
 
 random_number = randrange(1,101)
 player_number=0
-
+#print(random_number)
 def funkcja(random_number,player_number):
     player_number=int(input('Podaj liczbe z przedziału od 1 do 100: '))
     while player_number<=100 and player_number>=1:
