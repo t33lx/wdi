@@ -20,7 +20,7 @@ def clear():
     system("cls")
 
 def loading_en():
-    tprint("PYGAME")
+    tprint("Guess a number")
     bar = Bar('Loading', fill='#', suffix='%(percent)d%%')
     for i in range(100):
         sleep(0.01)
@@ -28,7 +28,7 @@ def loading_en():
     bar.finish()
 
 def loading_pl():
-    tprint("PYGAME")
+    tprint("Zgadnij liczbe")
     bar = Bar('Ładowanie', fill='#', suffix='%(percent)d%%')
     for i in range(100):
         sleep(0.01)
@@ -294,7 +294,6 @@ def maingame_en():
     random_number = randrange(1,101)
     player_number=0
     counter=0
-
     #print(random_number)
     player_number=int(input('Enter a number from 1 to 100: '))
     while player_number!=random_number:
