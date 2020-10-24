@@ -6,7 +6,7 @@ liczbę mniejszą niż liczba wylosowana, to program wypisuje tekst "za mała li
 poda większą liczbę, to wypisuje tekst "za duża liczba". Jeśli użytkownik poda wylosowaną
 liczbę, to wypisuje tekst „brawo, mój przyjacielu”."""
 
-import pickle
+import json
 import webbrowser
 from bdb import bar
 from random import randrange
@@ -103,11 +103,12 @@ def menu_en():
 
 def leaderboard_en():
     clear()
-    with open('rank.pickle', 'rb') as f:
-        rank = pickle.load(f)
+    with open('ranks.txt') as f:
+        data=json.load(f)
         tprint("Leaderboard:")
-        print(rank)
-        x=input("Press [1] to quit: ")
+        for i in data:
+            print(i[0], i[1])
+        x=input("\nPress [1] to quit: ")
         x=int(x)
         if x==1:
             menu_en()
@@ -116,11 +117,12 @@ def leaderboard_en():
 
 def leaderboard_pl():
     clear()
-    with open('rank.pickle', 'rb') as f:
-        rank = pickle.load(f)
+    with open('ranks.txt') as f:
+        data=json.load(f)
         tprint("Ranking:")
-        print(rank)
-        x=input("Naciśnij [1] aby wyjść: ")
+        for i in data:
+            print(i[0], i[1])
+        x=input("\nNaciśnij [1] aby wyjść: ")
         x=int(x)
         if x==1:
             menu_pl()
@@ -214,9 +216,13 @@ def menu_game_pl(nick, counter):
         maingame_pl()
     elif sel_game==2:
         bestscores={}
+        with open('ranks.txt') as f:
+            data=json.load(f)
+        bestscores.update(data)
         bestscores.update({nick : counter})
-        with open('rank.pickle', 'wb') as f:
-            pickle.dump(bestscores, f, pickle.HIGHEST_PROTOCOL)
+        bestscores=sorted(bestscores.items(), key=lambda x:x[1])
+        with open('ranks.txt', 'w') as f:
+            json.dump(bestscores,f)
         print("Zapisywanie...")
         sleep(2)
         clear()
@@ -242,9 +248,13 @@ def menu_game_en(nick, counter):
         maingame_en()
     elif sel_game==2:
         bestscores={}
+        with open('ranks.txt') as f:
+            data=json.load(f)
+        bestscores.update(data)
         bestscores.update({nick : counter})
-        with open('rank.pickle', 'wb') as f:
-            pickle.dump(bestscores, f, pickle.HIGHEST_PROTOCOL)
+        bestscores=sorted(bestscores.items(), key=lambda x:x[1])
+        with open('ranks.txt', 'w') as f:
+            json.dump(bestscores,f)
         print("Saving...")
         sleep(2)
         clear()

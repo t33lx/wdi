@@ -12,14 +12,4 @@ https://en.wikibooks.org/wiki/A_Beginner%27s_Python_Tutorial
 
 =================================================================================================
 
-inne
-
-https://pl.khanacademy.org/computing/computer-science/algorithms/binary-search/a/binary-search
-
-https://pl.khanacademy.org/computing/computer-science/algorithms#sorting-algorithms
-
-https://pl.khanacademy.org/computing/computer-science/algorithms#insertion-sort
-
-https://pl.khanacademy.org/computing/computer-science/algorithms#quick-sort
-
 
