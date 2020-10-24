@@ -1,1 +1,1 @@
-[["aga", 5], ["wdi_test", 8], ["kocham", 6], ["t33lx", 3]]
+[["t33lx", 4], ["XD", 4], ["aga", 5], ["kocham", 6], ["wdi_test", 8]]
