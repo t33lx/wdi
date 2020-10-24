@@ -1,4 +1,4 @@
-Python
+Linki:
 
 https://pl.wikibooks.org/wiki/Zanurkuj_w_Pythonie/Wersja_do_druku
 
@@ -9,6 +9,20 @@ https://www.learnpython.org/pl/
 https://www.learnpython.org/pl/Instrukcje_warunkowe
 
 https://en.wikibooks.org/wiki/A_Beginner%27s_Python_Tutorial
+
+https://pypi.org/project/art/
+
+https://pypi.org/project/progress/
+
+https://docs.python.org/2/library/webbrowser.html
+
+https://docs.python.org/3/library/json.html
+
+https://docs.python.org/3/library/os.html
+
+https://discord.gg/python
+
+i poradniki na youtube.com
 
 =================================================================================================
 
