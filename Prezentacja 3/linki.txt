@@ -1,2 +1,4 @@
+https://ifttt.com
+https://lifegeek.pl/aplikacja-ifttt/
 https://create.arduino.cc/projecthub?difficulty=beginner&sort=trending&type=tutorial
 https://forbot.pl/blog/top-10-inspirujacych-projektow-z-arduino-id35137
